@@ -1,18 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * Return: alway returns 0
+ *
  */
 int main(void)
 {
-	int i;
+	int a = 0;
 
-	 (i = 0; i < 10; i++)
-		("%d", i);
-	            ("\n");
-
+	for (; a < 10 ; a++)
+		printf("%d", a);
+	putchar('\n');
 	return (0);
 }
