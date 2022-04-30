@@ -1,3 +1,4 @@
+
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -165,7 +166,7 @@ void print_osabi(unsigned char *e_ident)
 	case ELFOSABI_TRU64:
 		printf("UNIX - TRU64\n");
 		break;
-[O	case ELFOSABI_ARM:
+	case ELFOSABI_ARM:
 		printf("ARM\n");
 		break;
 	case ELFOSABI_STANDALONE:
