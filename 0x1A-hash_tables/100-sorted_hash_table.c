@@ -1,4 +1,3 @@
-
 #include "hash_tables.h"
 
 shash_table_t *shash_table_create(unsigned long int size);
@@ -100,7 +99,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		new->sprev = NULL;
 		new->snext = ht->shead;
 		ht->shead->sprev = new;
-		ht->shead = new;
+[O		ht->shead = new;
 	}
 	else
 	{
@@ -125,7 +124,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
  * @ht: A pointer to the sorted hash table.
  * @key: The key to get the value of.
  *
-[O * Return: If the key cannot be matched - NULL.
+ * Return: If the key cannot be matched - NULL.
  *         Otherwise - the value associated with key in ht.
  */
 char *shash_table_get(const shash_table_t *ht, const char *key)
